@@ -70,9 +70,9 @@ function Install ($arguments) {
 
         Write-Host "Downloading $modName"
         Download-JarFile $downloadUrl $outputPath
+        Write-Host ""
     }
 }
-
 
 try {
     Install $args
@@ -81,4 +81,4 @@ try {
     Write-Host "Patching failed: $_"
 }
 
-Read-Host â€œPress ENTER to exit...â€
+Read-Host Press ENTER to exit...
